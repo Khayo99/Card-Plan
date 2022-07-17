@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikMedium.otf);
+}
+
+
+body {
+  background-image: url('..//assets/background.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+html {
+  width: 100%;
+}
+
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.text h1 {
+  color: #ffffff;
+  font-family: Graphik;
+  font-weight: 600;
+  font-size: 4.8rem;
+  font-weight: 600;
+
+}
+
+.text p {
+  color: #EBE4FF;
+  font-family: Graphik;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.cards {
+  padding: 5rem 3rem;
+}
+
+.card {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  width: 27rem;
+  height: 39.2rem;
+  border-radius: 2rem;
+  padding: 3rem 3.2rem 2rem 3.2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  display: inline-block;
+}
+
+.card-1,
+.card-3 {
+  background: rgba(147, 142, 255, 0.3);
+  backdrop-filter: blur(0.2rem);
+}
+
+.card-2 {
+  background: linear-gradient(26.7deg, #0443feb0 26.6%, #ff65ffa4 97.02%);
+  margin-bottom: 2rem;
+  margin-inline: 3rem;
+}
+
+.type-plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title-plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-plan h2 {
+  font-family: Graphik;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+div .title-plan span {
+  font-family: Graphik;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1.3rem;
+  background-color: #5700C2;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, 0.2), inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10rem;
+}
+
+.type-plan p {
+  font-family: Graphik;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.type-plan span {
+  font-family: Graphik;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  gap: 1.3rem;
+  padding: 1.5rem 0rem;
+}
+
+.paragraph p {
+  font-family: Graphik;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.button-plan {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding-bottom: 2rem;
+}
+
+.btn-plan {
+  width: 23.0rem;
+  height: 5rem;
+  border-radius: 1.0rem;
+  font-family: Graphik;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #3028f9;
+}
+
+#anual {
+  display: none;
+}

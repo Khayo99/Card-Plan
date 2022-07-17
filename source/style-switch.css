@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+
+:root {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/GraphikMedium.otf);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin-inline: auto;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 10rem;
+  margin-top: 5rem;
+
+}
+
+.switch input {
+  appearance: none;
+  width: 20rem;
+  height: 50rem;
+  border-radius: 10rem;
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.switch input::before,
+.switch input::after {
+  z-index: 2;
+  position: absolute;
+  top: 56%;
+  transform: translateY(-50%);
+  font-weight: bolder;
+}
+
+.switch input::before {
+  content: 'Mensal';
+  font-family: Graphik;
+  font-size: 1.6rem;
+  font-weight: 400;
+  left: 2.2rem;
+  top: 2.6rem;
+}
+
+.switch input::after {
+  content: 'Anual';
+  font-family: Graphik;
+  font-size: 1.6rem;
+  font-weight: 400;
+  right: 2.7rem;
+  top: 2.6rem;
+}
+
+.switch input:checked {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.switch label {
+  z-index: 1;
+  position: absolute;
+  top: 0rem;
+  bottom: 0rem;
+  border-radius: 10rem;
+}
+
+.switch input {
+  transition: 0.25s;
+}
+
+.switch input:checked::after,
+.switch input:checked::before {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.switch input:checked+label {
+  left: 10rem;
+  right: 0rem;
+
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}
+
+.switch input:not(:checked) {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.4s;
+}
+
+.switch input:not(:checked)::before {
+  color: #ffffff;
+  transition: color 0.5s;
+}
+
+.switch input:not(:checked)::after {
+  color: #ffffff;
+  transition: color 0.5s 0.2s;
+}
+
+.switch input:not(:checked)+label {
+  left: 0rem;
+  right: 10rem;
+  background: rgba(255, 255, 255, 0.2);
+  transition: left 0.5s, right 0.4s 0.2s;
+}
